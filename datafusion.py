@@ -1,3 +1,13 @@
+"""
+This code assumes that the datasets are stored in NumPy arrays and 
+are already properly aligned (e.g., they have the same number of features). 
+The SpectralEmbedding function from scikit-learn's manifold module is used to 
+perform the spectral embedding, and the resulting fused dataset 
+is stored in the X_fused array. Finally, the X_fused array is split back 
+into the original datasets using indexing.
+"""
+
+
 import numpy as np
 from sklearn.manifold import SpectralEmbedding
 
